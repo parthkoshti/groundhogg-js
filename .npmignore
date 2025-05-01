@@ -1,5 +1,10 @@
+
 src/
 test/
-vitest.config.ts
-.env*
 *.spec.ts
+vitest.config.ts
+tsconfig.json
+
+
+.env*
+node_modules/

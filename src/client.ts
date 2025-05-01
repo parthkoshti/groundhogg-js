@@ -1,5 +1,4 @@
 import ky, { KyInstance } from "ky";
-import { ContactResponse, UpdateContact } from "./types";
 
 export class GroundhoggClient {
   private client: KyInstance;

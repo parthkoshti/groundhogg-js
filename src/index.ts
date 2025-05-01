@@ -1,2 +1,3 @@
-export * from './client';
-export * from './types';
+import { GroundhoggClient } from "./client";
+
+export { GroundhoggClient };
