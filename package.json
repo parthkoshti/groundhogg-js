@@ -1,5 +1,5 @@
 {
-  "name": "groundhogg.js",
+  "name": "groundhogg-js",
   "version": "1.0.0",
   "description": "TypeScript client for the Groundhogg CRM API",
   "main": "./dist/index.js",
