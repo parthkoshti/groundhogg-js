@@ -1,6 +1,6 @@
 # GroundhoggClient
 
-[![NPM Version](https://img.shields.io/npm/v/groundhogg-client.svg)](https://www.npmjs.com/package/groundhogg.js)
+[![NPM Version](https://img.shields.io/npm/v/groundhogg-client.svg)](https://www.npmjs.com/package/groundhogg-js)
 [![License](https://img.shields.io/github/license/snitchfeed/groundhogg-client)](./LICENSE)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](./tests)
 
@@ -22,13 +22,13 @@ A lightweight TypeScript client for interacting with the [Groundhogg v4 REST API
 
 ```bash
 # With pnpm
-pnpm add groundhogg-client
+pnpm add groundhogg-js
 
 # Or with npm
-npm install groundhogg-client
+npm install groundhogg-js
 
 # Or with yarn
-yarn add groundhogg-client
+yarn add groundhogg-js
 
 ```
 
