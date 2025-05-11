@@ -1,10 +1,9 @@
 import { describe, it, expect, beforeAll } from "vitest";
 import dotenv from "dotenv";
+import { Groundhogg } from "../src";
 dotenv.config();
 
-import { GroundhoggClient } from "../src/client";
-
-const gh = new GroundhoggClient({
+const gh = new Groundhogg({
   baseUrl: process.env.GROUNDHOGG_API_URI!,
   publicKey: process.env.GROUNDHOGG_PUBLIC_KEY!,
   token: process.env.GROUNDHOGG_TOKEN!,
