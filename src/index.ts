@@ -3,23 +3,20 @@ import ky, { KyInstance } from "ky";
 export class Groundhogg {
   private client: KyInstance;
   private defaultFrom: string;
-  private defaultReplyto: string;
 
   constructor({
     baseUrl,
     publicKey,
     token,
     defaultFrom,
-    defaultReplyto,
   }: {
     baseUrl: string;
     publicKey: string;
     token: string;
     defaultFrom: string;
-    defaultReplyto?: string;
   }) {
     this.defaultFrom = defaultFrom;
-    this.defaultReplyto = defaultReplyto || defaultFrom;
+
     this.client = ky.create({
       prefixUrl: baseUrl,
       headers: {
@@ -153,7 +150,6 @@ export class Groundhogg {
           from_name: fromName,
           type,
           content,
-          reply_to: replyTo || fromEmail || this.defaultReplyto,
         },
       });
       return await this.handleResponse(res);

@@ -1,7 +1,7 @@
 {
   "name": "groundhogg-js",
   "version": "1.0.7",
-  "description": "TypeScript client for the Groundhogg CRM API",
+  "description": "Javascript client for the Groundhogg CRM API",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
@@ -39,6 +39,11 @@
   "dependencies": {
     "ky": "^1.8.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parthkoshti/groundhogg-js"
+  },
+  "homepage": "https://github.com/parthkoshti/groundhogg-js",
   "devDependencies": {
     "@vitest/ui": "^3.1.2",
     "dotenv": "^16.5.0",

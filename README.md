@@ -1,7 +1,7 @@
 # GroundhoggClient
 
 [![NPM Version](https://img.shields.io/npm/v/groundhogg-js.svg)](https://www.npmjs.com/package/groundhogg-js)
-[![License](https://img.shields.io/github/license/snitchfeed/groundhogg-js)](./LICENSE)
+[![License](https://img.shields.io/github/license/parthkoshti/groundhogg-js)](./LICENSE)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](./tests)
 
 A lightweight TypeScript client for interacting with the [Groundhogg v4 REST API](https://help.groundhogg.io/collection/141-developers). Easily manage contacts, tags, and send transactional or marketing emails via API.
@@ -92,7 +92,6 @@ await gh.sendEmail({
   fromName: "Your Team",
   type: "transactional",
   content: "<p>Thanks for joining!</p>",
-  replyTo: "support@yourdomain.com",
 });
 ```
 
