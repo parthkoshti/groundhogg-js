@@ -1,6 +1,6 @@
 {
   "name": "groundhogg-js",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Javascript client for the Groundhogg CRM API",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
