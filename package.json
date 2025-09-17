@@ -3,6 +3,7 @@
   "version": "1.0.8",
   "description": "Javascript client for the Groundhogg CRM API",
   "main": "./dist/cjs/index.js",
+  "type": "module",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "files": [
@@ -23,7 +24,10 @@
     "build:esm": "tsc --project tsconfig.esm.json",
     "prepublishOnly": "pnpm run build",
     "test": "vitest",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "release:patch": "pnpm version patch && pnpm publish --access public",
+    "release:minor": "pnpm version minor && pnpm publish --access public",
+    "release:major": "pnpm version major && pnpm publish --access public"
   },
   "keywords": [
     "groundhogg",
@@ -37,7 +41,9 @@
   "author": "Parth Koshti",
   "license": "MIT",
   "dependencies": {
-    "ky": "^1.8.1"
+    "dotenv": "^8.2.0",
+    "ky": "^1.8.1",
+    "node-fetch": "^3.3.2"
   },
   "repository": {
     "type": "git",
@@ -49,5 +55,6 @@
     "dotenv": "^16.5.0",
     "typescript": "^5.3.3",
     "vitest": "^3.1.2"
-  }
+  },
+  "packageManager": "pnpm@10.16.1+sha512.0e155aa2629db8672b49e8475da6226aa4bdea85fdcdfdc15350874946d4f3c91faaf64cbdc4a5d1ab8002f473d5c3fcedcd197989cf0390f9badd3c04678706"
 }
